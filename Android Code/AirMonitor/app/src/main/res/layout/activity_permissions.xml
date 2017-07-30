@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/containerRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hack.airmonitor.PermissionsActivity">
+
+    <TextView
+        android:id="@+id/message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:gravity="center"
+        android:text="@string/permissions_message"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/message_retry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/permissions_message_try"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_below="@+id/message"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="24dp" />
+
+</RelativeLayout>
