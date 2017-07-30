@@ -1,0 +1,686 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		06A083942C5F22CC2EA01B632CDD765D /* RapidNetworkHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3C545F93464F96710BBF358A75B317 /* RapidNetworkHandler.swift */; };
+		0F259A7169E56180DC7627BC62A1791B /* RapidCollectionRef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980048EDBA70F250BC82803CD2018D05 /* RapidCollectionRef.swift */; };
+		11B295599D0823D11F13862057B216AF /* RapidError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50891E92FA6B1FC239202553420055D7 /* RapidError.swift */; };
+		19C3B9D61670E9E6F8CA425B3A34C87D /* RapidMutations.swift in Sources */ = {isa = PBXBuildFile; fileRef = D267C3494F0B1DA97051D0462156E8E2 /* RapidMutations.swift */; };
+		27FE96940C7E8CEB17C208373E384508 /* RapidQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC24D60FA98157192243D9EB307189CF /* RapidQuery.swift */; };
+		2CBF7DCADCCB5F97A9992024AE76776D /* RapidMutationProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF23B63C9940279AC4D1E48816A5D9B /* RapidMutationProtocols.swift */; };
+		33FE304A0C6D8AF0267A3EB7F1AE1EC0 /* Pods-rapidio-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A70EFDF132DF7142D775EFE92D784FBE /* Pods-rapidio-dummy.m */; };
+		3578106149C022E46CCC679DB43EBEA9 /* RapidServerEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6E44894E817D6978D6B39061ED64F2 /* RapidServerEvents.swift */; };
+		389E5D955ECB9EC0A45BC9FE8F1C82BB /* RapidSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033F13BEA508AD37C527ECF2A8FEDA24 /* RapidSerialization.swift */; };
+		3B55D91FBF80EFCCDA6747079F02894E /* RapidSocketManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F8543976CAB062AD4C2F4ECEFA5210 /* RapidSocketManager.swift */; };
+		41E631CCAE8CEF4B9B561DD3AB9B91AA /* RapidSubscriptionEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF95400334E6E6049E2719DDAE434639 /* RapidSubscriptionEvent.swift */; };
+		481B67D4226D6CB01391CDDCFBC2B09E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		4B765416AEAF7FA8659179F4E6D7A7FA /* RapidUnsubscriptionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C64677CB27EDBE0EF61383B3ACA788 /* RapidUnsubscriptionManager.swift */; };
+		5AF9403A9D248DF7F6CDCA9E781C91B2 /* RapidConnectionRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E30B993B5B843D9B116CB2415A42CE /* RapidConnectionRequests.swift */; };
+		5B70EC787FE074AACBF56E45C550C68E /* RapidChannelMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A08EC630BE926913980FC4F2D9675D /* RapidChannelMessage.swift */; };
+		5DD37A377A7D9AA6D2E169D8CE9BE286 /* RapidResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CA2E26A52C7A0457FE4BABA61A8C6E /* RapidResponse.swift */; };
+		5E1DDEE8BF78B63ADD865D8D993756C5 /* RapidLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897FBA1B39AA84D50461AE456CF95446 /* RapidLogger.swift */; };
+		688D616D9B26E015F59BDFFF7C768D5B /* WebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B1B64F4FA28290FC288B881A088F9D /* WebSocket.swift */; };
+		6952214367DF929F1D49973798DC8E36 /* RapidChannelRef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B20A9BD0042D0E89B1461E843FC90C /* RapidChannelRef.swift */; };
+		6C86A0146DCE226DACCF0F64C234337C /* DictionaryJSONExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47A247A7160159A7EB25DA7D9E4EE191 /* DictionaryJSONExtension.swift */; };
+		713AA5DC07A711117F08080002C65D8D /* RapidAuthorization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9186E6D7DAA77F477DFC874056FBFABA /* RapidAuthorization.swift */; };
+		7B931A5C2FAC502714C24C2C82D5472A /* WRO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6557A2F2EB885B0FF7E45FC25B1D5F2C /* WRO.swift */; };
+		7F85FC3D2C55AA78DFF9159442260984 /* RapidProtocolConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BF439762B5DE357ED3EB0A447BBA25 /* RapidProtocolConstants.swift */; };
+		8141792D0235606DD5CF78ABCD25796A /* RapidCollectionSubscriptionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D2C5560AD3F692FA99D684A1216913 /* RapidCollectionSubscriptionManager.swift */; };
+		8A46E042637C68D18C0DCDA745AF21AC /* RapidFetches.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8247A2769C5A8695AD3A807E7C1BB514 /* RapidFetches.swift */; };
+		8E27B3AC8964C3B92424C10E09344724 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CCDDA28D65EDACD164EC97503CACAC /* Extensions.swift */; };
+		8E835945E73990E25048F81D73E37D70 /* RapidChannelSubscriptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977CD62F3E6853EE136833588A9DA119 /* RapidChannelSubscriptions.swift */; };
+		94234C0FB2D711E887015558E1CEEFA4 /* Rapid-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B64CFC837CB1E2CAB2F3B8FEEAEE698E /* Rapid-dummy.m */; };
+		9F46BADE507F8DBC8014549406BFEED3 /* RapidReadProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D67FBDC8A226D75C61D2EBF856D087 /* RapidReadProtocols.swift */; };
+		A34961636FDD5A9C3199F53277DC6595 /* Pods-rapidio-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 92729F6DFE4B8438E2105532A03243FA /* Pods-rapidio-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A5001F3644F7EF95C1612C530BEBE351 /* Rapid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB67191D384C9AB8585E1053CF59128 /* Rapid.swift */; };
+		A968B579294209591FF18098A1230B57 /* RapidDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEC2D1B2957533DD7591E104050D6EA /* RapidDocument.swift */; };
+		B1838BF5763331CAF397E50573F357DC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		BA2F3522B991FE7D4E9A921796AAA5F6 /* RapidCollectionSubscriptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F14471469D6FE84B5F0002CF412D1D1 /* RapidCollectionSubscriptions.swift */; };
+		BB60805593FD970F4FE20FB6428B1777 /* RapidChannelSubscriptionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9E37B12B3289198E7832E70BCB6332 /* RapidChannelSubscriptionManager.swift */; };
+		BCC0F6C10548D189F03B8011A3B184A9 /* RapidProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A510739D35EC1BEC4328588FC8B21F5 /* RapidProtocols.swift */; };
+		C36BB44A6705634B36D90DC5C597335A /* RapidRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B31A651431C584C9727A36D72160F0B /* RapidRequest.swift */; };
+		CCD1C19A15D486DE06D3826C3CE5B48F /* RapidChannelPublish.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4997E1AB830B134EDB74D2A4353AD43E /* RapidChannelPublish.swift */; };
+		CF3F8851C6592D622258C026A46B6833 /* RapidCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F27DDEB9CC793851F3707A15079AD0A /* RapidCache.swift */; };
+		D30086C9ECA4831ECEDF18C8EFEA2507 /* RapidDocumentRef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368D4F551797CB11E2BEE97B7F026EC4 /* RapidDocumentRef.swift */; };
+		D38CA59F3D42479BD36E1E0A8FDB6BF3 /* RapidTimeOffset.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0FD3484EC8C9189E3275E94C882D3D3 /* RapidTimeOffset.swift */; };
+		D3B2B5A850805909E0514251C181D950 /* RapidHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA40D9EDF0CD2384C27270A55500AA76 /* RapidHandler.swift */; };
+		D4D957CCA51C273BEDCDD7DBD6926CE2 /* SSLSecurity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89303852946CC67B3DCA9F04E4E93E44 /* SSLSecurity.swift */; };
+		DF967A188C3A462C2D4E338A40CA2DBA /* Rapid-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CDC35F8E303F719B80BFE6B354D85DC8 /* Rapid-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FB04F2597B278E5065B167A5C229F985 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086DB8FABC8D4BE189053D8928A54E66 /* Helpers.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3BD3E8BED6DCF565CC13CD71FC32D52C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 485684396A4D28F659B5804D0A80752F;
+			remoteInfo = Rapid;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		033F13BEA508AD37C527ECF2A8FEDA24 /* RapidSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RapidSerialization.swift; path = Source/RapidClasses/RapidSerialization.swift; sourceTree = "<group>"; };
+		0552323AB7514B4898FD5C9BCAB5ABA2 /* Rapid.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Rapid.modulemap; sourceTree = "<group>"; };
+		086DB8FABC8D4BE189053D8928A54E66 /* Helpers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Helpers.swift; path = Source/Utils/Helpers.swift; sourceTree = "<group>"; };
+		0A510739D35EC1BEC4328588FC8B21F5 /* RapidProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RapidProtocols.swift; path = Source/RapidProtocols.swift; sourceTree = "<group>"; };
+		0F14471469D6FE84B5F0002CF412D1D1 /* RapidCollectionSubscriptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RapidCollectionSubscriptions.swift; path = Source/RapidClasses/RapidCollectionSubscriptions.swift; sourceTree = "<group>"; };
+		13C64677CB27EDBE0EF61383B3ACA788 /* RapidUnsubscriptionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RapidUnsubscriptionManager.swift; path = Source/RapidClasses/RapidUnsubscriptionManager.swift; sourceTree = "<group>"; };
+		14BF439762B5DE357ED3EB0A447BBA25 /* RapidProtocolConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RapidProtocolConstants.swift; path = Source/RapidClasses/RapidProtocolConstants.swift; sourceTree = "<group>"; };
+		15D2C5560AD3F692FA99D684A1216913 /* RapidCollectionSubscriptionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RapidCollectionSubscriptionManager.swift; path = Source/RapidClasses/RapidCollectionSubscriptionManager.swift; sourceTree = "<group>"; };
+		1B31A651431C584C9727A36D72160F0B /* RapidRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RapidRequest.swift; path = Source/Protocols/RapidRequest.swift; sourceTree = "<group>"; };
+		2CC9C8B516A1EF9886A891CC6C4EB51A /* Pods-rapidio.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-rapidio.modulemap"; sourceTree = "<group>"; };
+		30F76D8EAA572AA6493041D7C20C7B4E /* Pods-rapidio-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-rapidio-acknowledgements.plist"; sourceTree = "<group>"; };
+		368D4F551797CB11E2BEE97B7F026EC4 /* RapidDocumentRef.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RapidDocumentRef.swift; path = Source/RapidDocumentRef.swift; sourceTree = "<group>"; };
+		39CCDDA28D65EDACD164EC97503CACAC /* Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = Source/Utils/Extensions.swift; sourceTree = "<group>"; };
+		3A3B911CA489CC020AE5881670159885 /* Pods-rapidio-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-rapidio-resources.sh"; sourceTree = "<group>"; };
+		3EEC2D1B2957533DD7591E104050D6EA /* RapidDocument.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RapidDocument.swift; path = Source/RapidDocument.swift; sourceTree = "<group>"; };
+		47A247A7160159A7EB25DA7D9E4EE191 /* DictionaryJSONExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DictionaryJSONExtension.swift; path = Source/Utils/DictionaryJSONExtension.swift; sourceTree = "<group>"; };
+		4997E1AB830B134EDB74D2A4353AD43E /* RapidChannelPublish.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RapidChannelPublish.swift; path = Source/RapidClasses/RapidChannelPublish.swift; sourceTree = "<group>"; };
+		50891E92FA6B1FC239202553420055D7 /* RapidError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RapidError.swift; path = Source/RapidError.swift; sourceTree = "<group>"; };
+		5191D31C30CAB9ED0A341D677BE03ADB /* Rapid.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Rapid.xcconfig; sourceTree = "<group>"; };
+		6557A2F2EB885B0FF7E45FC25B1D5F2C /* WRO.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WRO.swift; path = Source/Utils/WRO.swift; sourceTree = "<group>"; };
+		7591A4F7ADDA1AC2ED37078786A300C2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7AB67191D384C9AB8585E1053CF59128 /* Rapid.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Rapid.swift; path = Source/Rapid.swift; sourceTree = "<group>"; };
+		7B9E37B12B3289198E7832E70BCB6332 /* RapidChannelSubscriptionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RapidChannelSubscriptionManager.swift; path = Source/RapidClasses/RapidChannelSubscriptionManager.swift; sourceTree = "<group>"; };
+		812DB47D0E7C91AE79321B81D2D10C3E /* Pods-rapidio-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-rapidio-frameworks.sh"; sourceTree = "<group>"; };
+		8247A2769C5A8695AD3A807E7C1BB514 /* RapidFetches.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RapidFetches.swift; path = Source/RapidClasses/RapidFetches.swift; sourceTree = "<group>"; };
+		87B20A9BD0042D0E89B1461E843FC90C /* RapidChannelRef.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RapidChannelRef.swift; path = Source/RapidChannelRef.swift; sourceTree = "<group>"; };
+		88B1B64F4FA28290FC288B881A088F9D /* WebSocket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WebSocket.swift; path = Source/Networking/WebSocket.swift; sourceTree = "<group>"; };
+		89303852946CC67B3DCA9F04E4E93E44 /* SSLSecurity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SSLSecurity.swift; path = Source/Networking/SSLSecurity.swift; sourceTree = "<group>"; };
+		897FBA1B39AA84D50461AE456CF95446 /* RapidLogger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RapidLogger.swift; path = Source/Utils/RapidLogger.swift; sourceTree = "<group>"; };
+		8B171CFB4C68B99D4636874C64F9AFB7 /* Pods-rapidio.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-rapidio.release.xcconfig"; sourceTree = "<group>"; };
+		8D7D6590B44AFD8803E02DD66B47E8C8 /* Pods_rapidio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_rapidio.framework; path = "Pods-rapidio.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9186E6D7DAA77F477DFC874056FBFABA /* RapidAuthorization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RapidAuthorization.swift; path = Source/RapidAuthorization.swift; sourceTree = "<group>"; };
+		92729F6DFE4B8438E2105532A03243FA /* Pods-rapidio-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-rapidio-umbrella.h"; sourceTree = "<group>"; };
+		92AF1690BD734FE727B503B0F20139A1 /* Pods-rapidio-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-rapidio-acknowledgements.markdown"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		94D67FBDC8A226D75C61D2EBF856D087 /* RapidReadProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RapidReadProtocols.swift; path = Source/Protocols/RapidReadProtocols.swift; sourceTree = "<group>"; };
+		977CD62F3E6853EE136833588A9DA119 /* RapidChannelSubscriptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RapidChannelSubscriptions.swift; path = Source/RapidClasses/RapidChannelSubscriptions.swift; sourceTree = "<group>"; };
+		980048EDBA70F250BC82803CD2018D05 /* RapidCollectionRef.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RapidCollectionRef.swift; path = Source/RapidCollectionRef.swift; sourceTree = "<group>"; };
+		9A6E44894E817D6978D6B39061ED64F2 /* RapidServerEvents.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RapidServerEvents.swift; path = Source/RapidClasses/RapidServerEvents.swift; sourceTree = "<group>"; };
+		9AF23B63C9940279AC4D1E48816A5D9B /* RapidMutationProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RapidMutationProtocols.swift; path = Source/Protocols/RapidMutationProtocols.swift; sourceTree = "<group>"; };
+		9C0046410109ECF7930B655BBC6B64A1 /* Pods-rapidio.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-rapidio.debug.xcconfig"; sourceTree = "<group>"; };
+		9F27DDEB9CC793851F3707A15079AD0A /* RapidCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RapidCache.swift; path = Source/Utils/RapidCache.swift; sourceTree = "<group>"; };
+		A1A08EC630BE926913980FC4F2D9675D /* RapidChannelMessage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RapidChannelMessage.swift; path = Source/RapidChannelMessage.swift; sourceTree = "<group>"; };
+		A70EFDF132DF7142D775EFE92D784FBE /* Pods-rapidio-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-rapidio-dummy.m"; sourceTree = "<group>"; };
+		B64CFC837CB1E2CAB2F3B8FEEAEE698E /* Rapid-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Rapid-dummy.m"; sourceTree = "<group>"; };
+		C3CA2E26A52C7A0457FE4BABA61A8C6E /* RapidResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RapidResponse.swift; path = Source/Protocols/RapidResponse.swift; sourceTree = "<group>"; };
+		CA40D9EDF0CD2384C27270A55500AA76 /* RapidHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RapidHandler.swift; path = Source/RapidHandler.swift; sourceTree = "<group>"; };
+		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		CC7E90A1B19D4B440E2C1494F036265F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDC35F8E303F719B80BFE6B354D85DC8 /* Rapid-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Rapid-umbrella.h"; sourceTree = "<group>"; };
+		D267C3494F0B1DA97051D0462156E8E2 /* RapidMutations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RapidMutations.swift; path = Source/RapidClasses/RapidMutations.swift; sourceTree = "<group>"; };
+		DC24D60FA98157192243D9EB307189CF /* RapidQuery.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RapidQuery.swift; path = Source/RapidQuery.swift; sourceTree = "<group>"; };
+		DF3C545F93464F96710BBF358A75B317 /* RapidNetworkHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RapidNetworkHandler.swift; path = Source/Networking/RapidNetworkHandler.swift; sourceTree = "<group>"; };
+		E0FD3484EC8C9189E3275E94C882D3D3 /* RapidTimeOffset.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RapidTimeOffset.swift; path = Source/RapidClasses/RapidTimeOffset.swift; sourceTree = "<group>"; };
+		E7E30B993B5B843D9B116CB2415A42CE /* RapidConnectionRequests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RapidConnectionRequests.swift; path = Source/RapidClasses/RapidConnectionRequests.swift; sourceTree = "<group>"; };
+		E9F8543976CAB062AD4C2F4ECEFA5210 /* RapidSocketManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RapidSocketManager.swift; path = Source/Networking/RapidSocketManager.swift; sourceTree = "<group>"; };
+		EF95400334E6E6049E2719DDAE434639 /* RapidSubscriptionEvent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RapidSubscriptionEvent.swift; path = Source/RapidClasses/RapidSubscriptionEvent.swift; sourceTree = "<group>"; };
+		F0A6FFF31BEBCA7F4E5ED91580075263 /* Rapid.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Rapid.framework; path = Rapid.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F48A68B893924D39D6EC6599E59FC3E4 /* Rapid-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Rapid-prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4D9A3AD5B65D64C7B0D55DFA595B6372 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				481B67D4226D6CB01391CDDCFBC2B09E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6471AEB333C5F25D519F802D9535E98F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1838BF5763331CAF397E50573F357DC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		28C8A06F49AE9DCF9976AC88975149DD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D7D6590B44AFD8803E02DD66B47E8C8 /* Pods_rapidio.framework */,
+				F0A6FFF31BEBCA7F4E5ED91580075263 /* Rapid.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				9DEB15F40255222973916249F5518327 /* Pods */,
+				28C8A06F49AE9DCF9976AC88975149DD /* Products */,
+				B6ABE21BDAB383A624186D461720C017 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		91F6936BCAD1A5E2B31C8B87042D8D0D /* Rapid */ = {
+			isa = PBXGroup;
+			children = (
+				47A247A7160159A7EB25DA7D9E4EE191 /* DictionaryJSONExtension.swift */,
+				39CCDDA28D65EDACD164EC97503CACAC /* Extensions.swift */,
+				086DB8FABC8D4BE189053D8928A54E66 /* Helpers.swift */,
+				7AB67191D384C9AB8585E1053CF59128 /* Rapid.swift */,
+				9186E6D7DAA77F477DFC874056FBFABA /* RapidAuthorization.swift */,
+				9F27DDEB9CC793851F3707A15079AD0A /* RapidCache.swift */,
+				A1A08EC630BE926913980FC4F2D9675D /* RapidChannelMessage.swift */,
+				4997E1AB830B134EDB74D2A4353AD43E /* RapidChannelPublish.swift */,
+				87B20A9BD0042D0E89B1461E843FC90C /* RapidChannelRef.swift */,
+				7B9E37B12B3289198E7832E70BCB6332 /* RapidChannelSubscriptionManager.swift */,
+				977CD62F3E6853EE136833588A9DA119 /* RapidChannelSubscriptions.swift */,
+				980048EDBA70F250BC82803CD2018D05 /* RapidCollectionRef.swift */,
+				15D2C5560AD3F692FA99D684A1216913 /* RapidCollectionSubscriptionManager.swift */,
+				0F14471469D6FE84B5F0002CF412D1D1 /* RapidCollectionSubscriptions.swift */,
+				E7E30B993B5B843D9B116CB2415A42CE /* RapidConnectionRequests.swift */,
+				3EEC2D1B2957533DD7591E104050D6EA /* RapidDocument.swift */,
+				368D4F551797CB11E2BEE97B7F026EC4 /* RapidDocumentRef.swift */,
+				50891E92FA6B1FC239202553420055D7 /* RapidError.swift */,
+				8247A2769C5A8695AD3A807E7C1BB514 /* RapidFetches.swift */,
+				CA40D9EDF0CD2384C27270A55500AA76 /* RapidHandler.swift */,
+				897FBA1B39AA84D50461AE456CF95446 /* RapidLogger.swift */,
+				9AF23B63C9940279AC4D1E48816A5D9B /* RapidMutationProtocols.swift */,
+				D267C3494F0B1DA97051D0462156E8E2 /* RapidMutations.swift */,
+				DF3C545F93464F96710BBF358A75B317 /* RapidNetworkHandler.swift */,
+				14BF439762B5DE357ED3EB0A447BBA25 /* RapidProtocolConstants.swift */,
+				0A510739D35EC1BEC4328588FC8B21F5 /* RapidProtocols.swift */,
+				DC24D60FA98157192243D9EB307189CF /* RapidQuery.swift */,
+				94D67FBDC8A226D75C61D2EBF856D087 /* RapidReadProtocols.swift */,
+				1B31A651431C584C9727A36D72160F0B /* RapidRequest.swift */,
+				C3CA2E26A52C7A0457FE4BABA61A8C6E /* RapidResponse.swift */,
+				033F13BEA508AD37C527ECF2A8FEDA24 /* RapidSerialization.swift */,
+				9A6E44894E817D6978D6B39061ED64F2 /* RapidServerEvents.swift */,
+				E9F8543976CAB062AD4C2F4ECEFA5210 /* RapidSocketManager.swift */,
+				EF95400334E6E6049E2719DDAE434639 /* RapidSubscriptionEvent.swift */,
+				E0FD3484EC8C9189E3275E94C882D3D3 /* RapidTimeOffset.swift */,
+				13C64677CB27EDBE0EF61383B3ACA788 /* RapidUnsubscriptionManager.swift */,
+				89303852946CC67B3DCA9F04E4E93E44 /* SSLSecurity.swift */,
+				88B1B64F4FA28290FC288B881A088F9D /* WebSocket.swift */,
+				6557A2F2EB885B0FF7E45FC25B1D5F2C /* WRO.swift */,
+				C27BCDF5F34EECA83464AEFFA17919A8 /* Support Files */,
+			);
+			name = Rapid;
+			path = Rapid;
+			sourceTree = "<group>";
+		};
+		9DEB15F40255222973916249F5518327 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				91F6936BCAD1A5E2B31C8B87042D8D0D /* Rapid */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B6ABE21BDAB383A624186D461720C017 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DD61B5DC033EC82550E823105BF25F7C /* Pods-rapidio */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C27BCDF5F34EECA83464AEFFA17919A8 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7591A4F7ADDA1AC2ED37078786A300C2 /* Info.plist */,
+				0552323AB7514B4898FD5C9BCAB5ABA2 /* Rapid.modulemap */,
+				5191D31C30CAB9ED0A341D677BE03ADB /* Rapid.xcconfig */,
+				B64CFC837CB1E2CAB2F3B8FEEAEE698E /* Rapid-dummy.m */,
+				F48A68B893924D39D6EC6599E59FC3E4 /* Rapid-prefix.pch */,
+				CDC35F8E303F719B80BFE6B354D85DC8 /* Rapid-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Rapid";
+			sourceTree = "<group>";
+		};
+		DD61B5DC033EC82550E823105BF25F7C /* Pods-rapidio */ = {
+			isa = PBXGroup;
+			children = (
+				CC7E90A1B19D4B440E2C1494F036265F /* Info.plist */,
+				2CC9C8B516A1EF9886A891CC6C4EB51A /* Pods-rapidio.modulemap */,
+				92AF1690BD734FE727B503B0F20139A1 /* Pods-rapidio-acknowledgements.markdown */,
+				30F76D8EAA572AA6493041D7C20C7B4E /* Pods-rapidio-acknowledgements.plist */,
+				A70EFDF132DF7142D775EFE92D784FBE /* Pods-rapidio-dummy.m */,
+				812DB47D0E7C91AE79321B81D2D10C3E /* Pods-rapidio-frameworks.sh */,
+				3A3B911CA489CC020AE5881670159885 /* Pods-rapidio-resources.sh */,
+				92729F6DFE4B8438E2105532A03243FA /* Pods-rapidio-umbrella.h */,
+				9C0046410109ECF7930B655BBC6B64A1 /* Pods-rapidio.debug.xcconfig */,
+				8B171CFB4C68B99D4636874C64F9AFB7 /* Pods-rapidio.release.xcconfig */,
+			);
+			name = "Pods-rapidio";
+			path = "Target Support Files/Pods-rapidio";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2DC3925F70300FB9E07E37CDD4900894 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A34961636FDD5A9C3199F53277DC6595 /* Pods-rapidio-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		936F342D4F4A05243DC9248DB4415631 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF967A188C3A462C2D4E338A40CA2DBA /* Rapid-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		485684396A4D28F659B5804D0A80752F /* Rapid */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 06FB08E11AF89493B001824761BDC217 /* Build configuration list for PBXNativeTarget "Rapid" */;
+			buildPhases = (
+				1F7653C53DE75FC308C08017FE3250A2 /* Sources */,
+				6471AEB333C5F25D519F802D9535E98F /* Frameworks */,
+				936F342D4F4A05243DC9248DB4415631 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Rapid;
+			productName = Rapid;
+			productReference = F0A6FFF31BEBCA7F4E5ED91580075263 /* Rapid.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E3806CD93F398F72B2ACC6AAC1814337 /* Pods-rapidio */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9269B773DA425A66801B7CEC131922D1 /* Build configuration list for PBXNativeTarget "Pods-rapidio" */;
+			buildPhases = (
+				32F93E2016BE4394FB3F3DA77BF43D26 /* Sources */,
+				4D9A3AD5B65D64C7B0D55DFA595B6372 /* Frameworks */,
+				2DC3925F70300FB9E07E37CDD4900894 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BF176B28C2A421A6CFD8E0BF472716BA /* PBXTargetDependency */,
+			);
+			name = "Pods-rapidio";
+			productName = "Pods-rapidio";
+			productReference = 8D7D6590B44AFD8803E02DD66B47E8C8 /* Pods_rapidio.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 28C8A06F49AE9DCF9976AC88975149DD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E3806CD93F398F72B2ACC6AAC1814337 /* Pods-rapidio */,
+				485684396A4D28F659B5804D0A80752F /* Rapid */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1F7653C53DE75FC308C08017FE3250A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C86A0146DCE226DACCF0F64C234337C /* DictionaryJSONExtension.swift in Sources */,
+				8E27B3AC8964C3B92424C10E09344724 /* Extensions.swift in Sources */,
+				FB04F2597B278E5065B167A5C229F985 /* Helpers.swift in Sources */,
+				94234C0FB2D711E887015558E1CEEFA4 /* Rapid-dummy.m in Sources */,
+				A5001F3644F7EF95C1612C530BEBE351 /* Rapid.swift in Sources */,
+				713AA5DC07A711117F08080002C65D8D /* RapidAuthorization.swift in Sources */,
+				CF3F8851C6592D622258C026A46B6833 /* RapidCache.swift in Sources */,
+				5B70EC787FE074AACBF56E45C550C68E /* RapidChannelMessage.swift in Sources */,
+				CCD1C19A15D486DE06D3826C3CE5B48F /* RapidChannelPublish.swift in Sources */,
+				6952214367DF929F1D49973798DC8E36 /* RapidChannelRef.swift in Sources */,
+				BB60805593FD970F4FE20FB6428B1777 /* RapidChannelSubscriptionManager.swift in Sources */,
+				8E835945E73990E25048F81D73E37D70 /* RapidChannelSubscriptions.swift in Sources */,
+				0F259A7169E56180DC7627BC62A1791B /* RapidCollectionRef.swift in Sources */,
+				8141792D0235606DD5CF78ABCD25796A /* RapidCollectionSubscriptionManager.swift in Sources */,
+				BA2F3522B991FE7D4E9A921796AAA5F6 /* RapidCollectionSubscriptions.swift in Sources */,
+				5AF9403A9D248DF7F6CDCA9E781C91B2 /* RapidConnectionRequests.swift in Sources */,
+				A968B579294209591FF18098A1230B57 /* RapidDocument.swift in Sources */,
+				D30086C9ECA4831ECEDF18C8EFEA2507 /* RapidDocumentRef.swift in Sources */,
+				11B295599D0823D11F13862057B216AF /* RapidError.swift in Sources */,
+				8A46E042637C68D18C0DCDA745AF21AC /* RapidFetches.swift in Sources */,
+				D3B2B5A850805909E0514251C181D950 /* RapidHandler.swift in Sources */,
+				5E1DDEE8BF78B63ADD865D8D993756C5 /* RapidLogger.swift in Sources */,
+				2CBF7DCADCCB5F97A9992024AE76776D /* RapidMutationProtocols.swift in Sources */,
+				19C3B9D61670E9E6F8CA425B3A34C87D /* RapidMutations.swift in Sources */,
+				06A083942C5F22CC2EA01B632CDD765D /* RapidNetworkHandler.swift in Sources */,
+				7F85FC3D2C55AA78DFF9159442260984 /* RapidProtocolConstants.swift in Sources */,
+				BCC0F6C10548D189F03B8011A3B184A9 /* RapidProtocols.swift in Sources */,
+				27FE96940C7E8CEB17C208373E384508 /* RapidQuery.swift in Sources */,
+				9F46BADE507F8DBC8014549406BFEED3 /* RapidReadProtocols.swift in Sources */,
+				C36BB44A6705634B36D90DC5C597335A /* RapidRequest.swift in Sources */,
+				5DD37A377A7D9AA6D2E169D8CE9BE286 /* RapidResponse.swift in Sources */,
+				389E5D955ECB9EC0A45BC9FE8F1C82BB /* RapidSerialization.swift in Sources */,
+				3578106149C022E46CCC679DB43EBEA9 /* RapidServerEvents.swift in Sources */,
+				3B55D91FBF80EFCCDA6747079F02894E /* RapidSocketManager.swift in Sources */,
+				41E631CCAE8CEF4B9B561DD3AB9B91AA /* RapidSubscriptionEvent.swift in Sources */,
+				D38CA59F3D42479BD36E1E0A8FDB6BF3 /* RapidTimeOffset.swift in Sources */,
+				4B765416AEAF7FA8659179F4E6D7A7FA /* RapidUnsubscriptionManager.swift in Sources */,
+				D4D957CCA51C273BEDCDD7DBD6926CE2 /* SSLSecurity.swift in Sources */,
+				688D616D9B26E015F59BDFFF7C768D5B /* WebSocket.swift in Sources */,
+				7B931A5C2FAC502714C24C2C82D5472A /* WRO.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32F93E2016BE4394FB3F3DA77BF43D26 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33FE304A0C6D8AF0267A3EB7F1AE1EC0 /* Pods-rapidio-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BF176B28C2A421A6CFD8E0BF472716BA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Rapid;
+			target = 485684396A4D28F659B5804D0A80752F /* Rapid */;
+			targetProxy = 3BD3E8BED6DCF565CC13CD71FC32D52C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		110A4348485191974982C9858C477DF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B171CFB4C68B99D4636874C64F9AFB7 /* Pods-rapidio.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-rapidio/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-rapidio/Pods-rapidio.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_rapidio;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		156284431C64CB05C59BDA0595A1E95A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		35DE0DA491DDA0C7FFCF37A48FA7F9BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5191D31C30CAB9ED0A341D677BE03ADB /* Rapid.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Rapid/Rapid-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Rapid/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Rapid/Rapid.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Rapid;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		39466B4A2BBEA5CBDABBCB0CF0515326 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C0046410109ECF7930B655BBC6B64A1 /* Pods-rapidio.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-rapidio/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-rapidio/Pods-rapidio.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_rapidio;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5BAD9072153D3B36743289867294ABF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5191D31C30CAB9ED0A341D677BE03ADB /* Rapid.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Rapid/Rapid-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Rapid/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Rapid/Rapid.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Rapid;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C382132BB6BF8CA1A911872A2062FD0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		06FB08E11AF89493B001824761BDC217 /* Build configuration list for PBXNativeTarget "Rapid" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BAD9072153D3B36743289867294ABF0 /* Debug */,
+				35DE0DA491DDA0C7FFCF37A48FA7F9BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C382132BB6BF8CA1A911872A2062FD0D /* Debug */,
+				156284431C64CB05C59BDA0595A1E95A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9269B773DA425A66801B7CEC131922D1 /* Build configuration list for PBXNativeTarget "Pods-rapidio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39466B4A2BBEA5CBDABBCB0CF0515326 /* Debug */,
+				110A4348485191974982C9858C477DF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

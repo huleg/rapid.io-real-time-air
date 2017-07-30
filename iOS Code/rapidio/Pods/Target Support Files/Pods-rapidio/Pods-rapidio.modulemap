@@ -1,0 +1,6 @@
+framework module Pods_rapidio {
+  umbrella header "Pods-rapidio-umbrella.h"
+
+  export *
+  module * { export * }
+}

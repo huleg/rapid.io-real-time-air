@@ -1,0 +1,12 @@
+PODS:
+  - Rapid (1.1.1)
+
+DEPENDENCIES:
+  - Rapid
+
+SPEC CHECKSUMS:
+  Rapid: 4703cffb1672c889e8c7e543dafbca8e0f03cacf
+
+PODFILE CHECKSUM: f83beeddc42c3ba187caec84bab56384589edf1d
+
+COCOAPODS: 1.1.1
